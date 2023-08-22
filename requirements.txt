@@ -1,10 +1,5 @@
 Flask
-<<<<<<< HEAD
 gunicorn
 pandas
-sklearn
+scikit-learn
 numpy
--e .
-=======
-gunicorn
->>>>>>> 99cc3f5da480626cb982475c5c2d16c8952c1104
