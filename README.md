@@ -88,7 +88,10 @@ To check running container in docker
 docker ps
 ```
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 99cc3f5da480626cb982475c5c2d16c8952c1104
 Tos stop docker conatiner 
 ```
 docker stop <container_id>
