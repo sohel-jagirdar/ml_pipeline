@@ -11,8 +11,8 @@ def index():
         raise Exception('We are Testing Costum Exception')
     except Exception as e:
         housing=HousingException(e,sys)
-        logging.INFO(housing.error_message)
-        logging.INFO(' We are testing logging module')
+        logging.info(housing.error_message)
+        logging.info(' We are testing logging module')
     return "CI CD pipeline has been established."
 
 
