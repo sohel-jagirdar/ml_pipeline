@@ -22,3 +22,6 @@ ModelEvaluationConfig=nametuple("ModelEvaluationConfig",["model_evaluation_file_
 ModelPusherConfig=nametuple("ModelPusherConfig",["export_dir_path"])
 
 
+TrainingPipelineConfig=nametuple("TrainingPipelineConfig",["artifact_dir"])
+
+
