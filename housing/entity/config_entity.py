@@ -1,27 +1,27 @@
-from collections import nametuple
+from collections import namedtuple
 
-DataIngetionConfig = namedtuple("DataIngetionConfig",['dataset_download_url','tgz_download_dir','raw_data_dir','ingested_train_dir','ingested_test_dir'])
-
-
-
-DataValidationConfig=nametuple("DataValidationConfig" , ["schema_file_path"])
+DataIngestionConfig = namedtuple("DataIngestionConfig",["dataset_download_url","tgz_download_dir","raw_data_dir","ingested_train_dir","ingested_test_dir"])
 
 
-DataTransformationConfig = nametuple("DataTransformationConfig",["add_bedroom_per_room",
+
+DataValidationConfig=namedtuple("DataValidationConfig" , ["schema_file_path"])
+
+
+DataTransformationConfig = namedtuple("DataTransformationConfig",["add_bedroom_per_room",
                                                                  "transformed_train_dir",
                                                                  "transformed_test_dir",
                                                                  "preprocessed_object_file_path"])
 
 
-ModelTrainerConfig=nametuple("ModelTrainerConfig",["trained_model_file_path","base_accuracy"])
+ModelTrainerConfig=namedtuple("ModelTrainerConfig",["trained_model_file_path","base_accuracy"])
 
 
-ModelEvaluationConfig=nametuple("ModelEvaluationConfig",["model_evaluation_file_path","time_stamp"])
+ModelEvaluationConfig=namedtuple("ModelEvaluationConfig",["model_evaluation_file_path","time_stamp"])
 
 
-ModelPusherConfig=nametuple("ModelPusherConfig",["export_dir_path"])
+ModelPusherConfig=namedtuple("ModelPusherConfig",["export_dir_path"])
 
 
-TrainingPipelineConfig=nametuple("TrainingPipelineConfig",["artifact_dir"])
+TrainingPipelineConfig=namedtuple("TrainingPipelineConfig",["artifact_dir"])
 
 
