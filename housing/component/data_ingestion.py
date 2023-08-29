@@ -21,7 +21,7 @@ class DataIngestion:
 
     def download_housing_data(self,) -> str:
         try:
-            #extraction remote url to download dataset
+            #url to download dataset
             download_url = self.data_ingestion_config.dataset_download_url
 
             #folder location to download file
@@ -100,7 +100,7 @@ class DataIngestion:
 
             if strat_train_set is not None:
                 os.makedirs(self.data_ingestion_config.ingested_train_dir,exist_ok=True)
-                logging.info(f"Exporting training datset to file: [{train_file_path}]")
+                logging.info(f"Exporting training dataset to file: [{train_file_path}]")
                 strat_train_set.to_csv(train_file_path,index=False)
 
             if strat_test_set is not None:
