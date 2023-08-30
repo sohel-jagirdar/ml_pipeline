@@ -4,3 +4,4 @@ pandas
 scikit-learn
 numpy
 evidently==0.2.8
+dill

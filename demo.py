@@ -9,7 +9,7 @@ def main():
         pipeline = Pipeline()
         pipeline.run_pipeline()
         # logging.info("Data Ingestion Pipeline Created")
-        # data_validation_config=DataValidation().validate_dataset_schema()
+        # data_validation_config=DataValidation().get_data_transformation_config()
         # print(data_validation_config)
 
     except Exception as e:
