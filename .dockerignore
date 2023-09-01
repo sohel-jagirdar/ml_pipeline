@@ -3,3 +3,4 @@ venv/
 .gitignore
 housing/artifact
 *.log
+housing/saved_models
