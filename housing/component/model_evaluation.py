@@ -1,8 +1,7 @@
 from housing.logger import logging
 from housing.exception import HousingException
 from housing.entity.config_entity import ModelEvaluationConfig
-from housing.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact, ModelTrainerArtifact, \
-    ModelEvaluationArtifact
+from housing.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact, ModelTrainerArtifact, ModelEvaluationArtifact
 from housing.constant import *
 import numpy as np
 import os
