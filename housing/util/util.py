@@ -33,6 +33,7 @@ def read_yaml_file(file_path:str)->dict:
     except Exception as e:
         raise HousingException(e,sys) from e
 
+
 def save_numpy_array_data(file_path: str, array: np.array):
     """
     Save numpy array data to file
@@ -61,28 +62,29 @@ def load_numpy_array_data(file_path: str) -> np.array:
         raise HousingException(e, sys) from e
 
 
-
-def save_object(file_path: str, obj):
+def save_object(file_path:str,obj):
     """
-        file_path: str
-        obj: Any sort of object
-        """
+    file_path: str
+    obj: Any sort of object
+    """
     try:
         dir_path = os.path.dirname(file_path)
         os.makedirs(dir_path, exist_ok=True)
         with open(file_path, "wb") as file_obj:
             dill.dump(obj, file_obj)
     except Exception as e:
-        raise HousingException(e, sys) from e
-def load_object(file_path: str):
+        raise HousingException(e,sys) from e
+
+
+def load_object(file_path:str):
     """
-        file_path: str
-        """
+    file_path: str
+    """
     try:
         with open(file_path, "rb") as file_obj:
             return dill.load(file_obj)
     except Exception as e:
-        raise HousingException(e, sys) from e
+        raise HousingException(e,sys) from e
 
 
 def load_data(file_path: str, schema_file_path: str) -> pd.DataFrame:
@@ -95,6 +97,7 @@ def load_data(file_path: str, schema_file_path: str) -> pd.DataFrame:
 
         error_messgae = ""
 
+
         for column in dataframe.columns:
             if column in list(schema.keys()):
                 dataframe[column].astype(schema[column])
@@ -105,4 +108,4 @@ def load_data(file_path: str, schema_file_path: str) -> pd.DataFrame:
         return dataframe
 
     except Exception as e:
-        raise HousingException(e, sys) from e
+        raise HousingException(e,sys) from e

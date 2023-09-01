@@ -63,6 +63,7 @@ class FeatureGenerator(BaseEstimator, TransformerMixin):
 
     def fit(self, X, y=None):
         return self
+
     def transform(self, X, y=None):
         try:
             room_per_household = X[:, self.total_rooms_ix] / X[:, self.households_ix]
