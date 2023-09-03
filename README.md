@@ -1,3 +1,5 @@
+Application url : ( URL Hosting is turned off)
+
 ## Start Machine Learning project.
 
 ### Software and account Requirement.
@@ -62,9 +64,9 @@ git remote -v
 ```
 
 To setup CI/CD pipeline in heroku we need 3 information
-1. HEROKU_EMAIL = sohel.jahagirdar@sptr.co
+1. HEROKU_EMAIL = anishyadav7045075175@gmail.com
 2. HEROKU_API_KEY = <>
-3. HEROKU_APP_NAME = ml-pipeline-poc
+3. HEROKU_APP_NAME = ml-regression-app
 
 BUILD DOCKER IMAGE
 ```
@@ -88,12 +90,38 @@ To check running container in docker
 docker ps
 ```
 
+Tos stop docker conatiner
 ```
 docker stop <container_id>
 ```
 
-pipp Install ipykernal
+
+
+```
+python setup.py install
+```
+
+
+Install ipykernel
 
 ```
 pip install ipykernel
 ```
+
+Install Evidently to find Data Drift :
+
+Note: Data Drift is When your dataset stats gets change we call it as data drift
+
+```
+pip install Evidently
+```
+
+
+Install Matplotlib
+
+```
+pip install Matplotlib
+```
+
+
+

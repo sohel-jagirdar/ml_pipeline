@@ -1,7 +1,10 @@
+numpy
 Flask
 gunicorn
+sklearn
 pandas
-scikit-learn
-numpy
-evidently==0.2.8
+PyYAML
+evidently
 dill
+matplotlib
+-e .
