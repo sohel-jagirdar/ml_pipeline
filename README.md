@@ -1,6 +1,32 @@
-Application url : ( URL Hosting is turned off)
 
-## Start Machine Learning project.
+
+The data contains information from the California census. So although it may help you with predicting current housing prices.
+
+**Content:**
+The data pertains to the houses found in a given California district and some summary stats about them based on the census data. The data was not cleaned so there are some pre-processing steps performed using MLOPS.  We have used automation of pipeline where one run required to perform all the steps as mentioned Below. 
+
+**ML Life cycle Operations as per requirement :**
+
+-  Data Ingestion
+- Data Validation 
+- Data Transformation 
+- Model training
+- Model Evaluation
+- Model Pusher
+
+**MLOPS** Operations are performed during **Phase 1** : 
+
+- [ ]  **CI** : Continues Integration
+- [ ] **CD** : Continues Deployment 
+- [ ]  **CT** : Continues Training
+- [ ] **DVC** : Data Versioning maintaining
+- [ ] **Model Versioning** 
+
+**Using Github, Github Action and Cloud platfrom Like Heroku to Provide an API to Client **
+
+
+
+## Application URL ( STATUS : TURNED OFF )
 
 ### Software and account Requirement.
 
@@ -64,9 +90,9 @@ git remote -v
 ```
 
 To setup CI/CD pipeline in heroku we need 3 information
-1. HEROKU_EMAIL = anishyadav7045075175@gmail.com
+1. HEROKU_EMAIL = sohel.jagirdar@outlook.com
 2. HEROKU_API_KEY = <>
-3. HEROKU_APP_NAME = ml-regression-app
+3. HEROKU_APP_NAME = ml-housing-app
 
 BUILD DOCKER IMAGE
 ```
