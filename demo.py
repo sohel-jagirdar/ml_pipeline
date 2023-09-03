@@ -28,3 +28,35 @@ def main():
 
 if __name__=="__main__":
     main()
+
+
+
+# from threading import Thread
+# import time
+# class DemoThread(Thread):
+#     def __init__(self,*args,**kwargs):
+#         super().__init__(daemon=False,name="demo_thread")
+#
+#     def print_msg(self):
+#         time.sleep(5)
+#         print("I was called by thread ")
+#
+#     def run(self):
+#         self.print_msg()
+#
+# a=DemoThread()
+#
+# print("Im Waiting for print massage to complete") # Immidiate response to user
+# a.start()
+# a.join() # run process smoother or connect thread in one flow
+
+
+
+# from collections import namedtuple
+# Experiment = namedtuple("Experiment", ["experiment_id", "initialization_timestamp", "artifact_time_stamp",
+#                                        "running_status", "start_time", "stop_time", "execution_time", "message",
+#                                        "experiment_file_path", "accuracy", "is_model_accepted"])
+#
+# Experiment(*([None] * 11))
+# print(Experiment["experiment_id"])
+
