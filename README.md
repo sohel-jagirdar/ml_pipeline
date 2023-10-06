@@ -149,5 +149,18 @@ Install Matplotlib
 pip install Matplotlib
 ```
 
+**Project Architecture :**
+
+![project arch](https://github.com/sohel-jagirdar/ml_pipeline/assets/52422511/8228dfa2-97c1-4426-ad6f-a8938538705b)
+
+**Data Collection :**
+
+![data collection](https://github.com/sohel-jagirdar/ml_pipeline/assets/52422511/e15ea54b-e263-4fe6-ab01-396ca3fffa1c)
+
+**Deployment :**
+
+![deplyement arch](https://github.com/sohel-jagirdar/ml_pipeline/assets/52422511/92e1ea0a-345e-4df8-87f1-ca5019a4985f)
+
+
 
 
