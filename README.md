@@ -2,7 +2,7 @@
 
 The data contains information from the California census. So although it may help you with predicting current housing prices.
 
-**Content:**
+**Details:**
 The data pertains to the houses found in a given California district and some summary stats about them based on the census data. The data was not cleaned so there are some pre-processing steps performed using MLOPS.  We have used automation of pipeline where one run required to perform all the steps as mentioned Below. 
 
 **ML Life cycle Operations as per requirement :**
